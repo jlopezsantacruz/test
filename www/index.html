@@ -48,8 +48,34 @@
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Javier test app</p>
-            <input type="text" id="name">
-            <button onclick="shake()">Vibrate Phone 2</button>
+            
+            <input type="text" id="numberone">
+			<input type="text" id="numbertwo">
+           
+            <button onclick="add()">add in</button>
+
+            <script>
+             function add()
+            {
+                var numberone = document.getElementById('numberone').value;
+                var numbertwo = document.getElementById('numbertwo').value;
+
+                numberone = parseInt(numberone);
+                numbertwo = parseInt(numbertwo);
+
+                var result = numberone + numbertwo
+
+                console.log(numberone);
+                console.log(numbertwo);
+                console.log(result);
+
+                //Document.getElementById('result').innerHTML = result;
+                document.getElementById('result').innerHTML = result;
+            }
+            </script>
+           
+
+           
             <Div id="placeHolder">
 
             </Div>
